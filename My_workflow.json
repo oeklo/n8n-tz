@@ -1,0 +1,60 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "6da3e64d-1628-4674-afe4-ba77cbeed632",
+      "name": "Start",
+      "type": "n8n-nodes-base.start",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "value": "a"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "96c7b5d6-59b8-4b02-89c9-5bca91ac141a",
+      "name": "Set",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        460,
+        300
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Start": {
+      "main": [
+        [
+          {
+            "node": "Set",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "saveExecutionProgress": "DEFAULT",
+    "saveManualExecutions": true
+  },
+  "id": 1,
+  "meta": {
+    "instanceId": "b3169568848cec0cb7b05af18444764d6f5417b176faeb9ac60e350b462eaaf7"
+  },
+  "tags": []
+}
